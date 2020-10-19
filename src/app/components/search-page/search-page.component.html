@@ -1,0 +1,33 @@
+
+
+<div class="searchBox">
+    <mat-form-field appearance="fill" style="width:80%">
+        <mat-label>Search Users</mat-label>
+        <input matInput [(ngModel)]="searchInput" (keydown.enter)="enterKeyPressed()">
+    </mat-form-field> <button mat-raised-button [disabled]="!searchInput" (click)="clickSearchButton()" color="primary">Search</button>
+</div>
+<div class="totalUsers">
+    <h3 *ngIf="totalCount">Total users: {{ totalCount }}</h3>
+</div>
+<hr style="border-top: dotted 1px;" />
+
+<div class="userTable">
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th >Avatar</th>
+            <th >Name</th>
+            <th >ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of rowData" (click)="selectedUser(row.id)">
+            <td><img src="{{row.avatar_url}}" alt=""></td>
+            <td>{{row.login}}</td>
+            <td>{{row.id}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>

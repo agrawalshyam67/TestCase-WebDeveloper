@@ -1,0 +1,28 @@
+
+
+    <div class="userNotFound" *ngIf="userNotFound">
+        <h1>User Not Available</h1> <button mat-raised-button (click)="goToSearchPage()" color="primary">Go To Search Page</button>
+    </div>
+    <div class="userProfile" >
+        <img *ngIf="!userNotFound" src="{{ user.avatar_url }}" > <br> <br>        
+    </div>
+    <div class="userProfile">
+        <h2 *ngIf="!userNotFound">{{ user.login }}</h2>
+    </div>
+    
+    <hr style="border-top: dotted 1px;" *ngIf="!userNotFound" />
+    
+    <div class="barChart" *ngIf="!userNotFound">
+       
+        <div style="display: block; margin-top: 10%;">
+            <canvas baseChart
+                    [datasets]="barChartData"
+                    [labels]="barChartLabels"
+                    [options]="barChartOptions"
+                    [legend]="barChartLegend"
+                    [chartType]="barChartType">
+            </canvas>
+          </div>
+        
+    </div>
+

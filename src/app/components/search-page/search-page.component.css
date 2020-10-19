@@ -1,0 +1,23 @@
+.searchBox{
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+.totalUsers{
+    align-items: center;
+    
+}
+
+.userTable{
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }

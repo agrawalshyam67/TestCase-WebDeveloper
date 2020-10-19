@@ -1,0 +1,11 @@
+.userProfile   {
+    display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+img {
+    border-radius: 50%;
+    width: 25%;
+    height: 20%;
+  }
