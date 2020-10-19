@@ -17,6 +17,8 @@ import { UserPageComponent } from './components/user-page/user-page.component';
 
 // Chart.js
 import { ChartsModule } from 'ng2-charts';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ChartsModule } from 'ng2-charts';
     DemoMaterialModule,
     FormsModule,
     HttpClientModule,
-    ChartsModule
+    ChartsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
