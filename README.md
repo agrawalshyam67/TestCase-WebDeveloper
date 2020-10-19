@@ -1,4 +1,4 @@
-# TestCaseWebDeveloperShyam
+# TestCase_WebDeveloper_Humanoo_Shyam
 
 ## Github Users Project
 The goal of this test is to simulate a real project that you can start from scratch. You can develop in the way you judge that will be easy to maintain and implement MANY new features and pages in the future.
