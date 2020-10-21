@@ -39,13 +39,13 @@ The user details page should be also accessible independently of the search resu
 
 Use any charting framework that you can find and then create a simple bar chart to display the number of followers of the first 10 users.
 
-Level 5 (Optional): 
+## Level 5 (Optional): 
 
 In the future of this project, we want to be able to access the users page offline.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
-
 ## Installation
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 
 ### NPM
 
